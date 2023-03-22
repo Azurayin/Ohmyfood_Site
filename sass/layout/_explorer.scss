@@ -1,0 +1,35 @@
+.explorer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color_gray2;
+    padding: 30px 0 60px;
+    &__title{
+        width: 275px;
+        height: 68px;
+        text-align: center;
+    }
+    &__txt {
+        width: 315px;
+        height: 46px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+    }
+    &__button{
+        height: 50px;
+        width: 218px;
+        border-radius: 25px;
+        margin-top: 25px;
+        color: white;
+        border: none;
+        font-size: 16px;
+        &--backgroundcolor{
+            background-image: linear-gradient(to bottom , $color_secondary, $color_primary) ;
+        }
+        &--shadow{
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
