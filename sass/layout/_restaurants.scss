@@ -6,7 +6,12 @@
 .cardsconteneur{
     width: 100%;
     margin-top: 28px;
-}
+    @media screen and (min-width: 769px){
+        display : flex;
+        justify-content: space-between;
+    }
+        
+    }
 
 .card{
     height: 250px;
@@ -33,8 +38,9 @@
         }
         &__icon{
             margin-right: 30px;
-}
-}
+        }
+    }
+
 }
 .fa-heart{
     font-size: 30px;

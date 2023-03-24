@@ -1,0 +1,17 @@
+.nouveau {
+    position: relative;
+    &::before{
+        content: "Nouveau";
+        position: absolute;
+        height: 30px;
+        width: 80px;
+        color: $color_green_font;
+        background-color: $color_green;
+        top: 15px;
+        right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+

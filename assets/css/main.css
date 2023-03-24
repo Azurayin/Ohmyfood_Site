@@ -13,7 +13,7 @@ h1 {
   font-family: "Shrikhand", "sans-serif";
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   padding: 0;
 }
@@ -150,6 +150,12 @@ a {
   width: 100%;
   margin-top: 28px;
 }
+@media screen and (min-width: 769px) {
+  .cardsconteneur {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .card {
   height: 250px;
@@ -181,4 +187,55 @@ a {
 
 .fa-heart {
   font-size: 30px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 769px) {
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+footer a {
+  color: #FFFFFF;
+}
+footer h2 {
+  font-family: "shrikhand", "sans-serif";
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 769px) {
+  footer h2 {
+    order: 2;
+    padding-bottom: 0px;
+    font-size: medium;
+  }
+}
+footer p {
+  padding-bottom: 7px;
+}
+
+.nouveau {
+  position: relative;
+}
+.nouveau::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  color: #008766;
+  background-color: #99E2D0;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
