@@ -141,7 +141,7 @@ a {
   margin-left: 20px;
 }
 
-.restaurant {
+.menu {
   padding: 55px 30px 65px;
   background-color: #F6F6F6;
 }
@@ -223,6 +223,9 @@ footer h2 {
 footer p {
   padding-bottom: 7px;
 }
+footer i {
+  margin-right: 10px;
+}
 
 .nouveau {
   position: relative;
@@ -239,4 +242,27 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  left: 32px;
+  font-size: 20px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  object-position: center;
 }
