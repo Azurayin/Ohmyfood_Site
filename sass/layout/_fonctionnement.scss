@@ -1,15 +1,26 @@
 .fonctionnement {
     margin: 50px 30px 70px;
+    @media screen and (min-width:769px) {
+        padding-left: 160px;
+    }
 }
 
 .boutonsconteneur{
         margin-top: 28px;
         width: 100%;
+        margin-left: 15px;
+        @media screen and (min-width:769px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 36px;
+        }
 }
 
 .bouton{
         height: 80px;
         width: 100%;
+
         margin-bottom: 25px;
         display: flex;
         align-items: center;
@@ -46,7 +57,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-
+    font-weight: 600;
 
     &--backgroundcolor{
         background-color: $color_primary;

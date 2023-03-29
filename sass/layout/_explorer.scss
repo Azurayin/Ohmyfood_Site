@@ -4,11 +4,18 @@
     justify-content: center;
     align-items: center;
     background-color: $color_gray2;
-    padding: 30px 0 60px;
+    padding: 30px 0 55px;
+    width: 315;
+
+
     &__title{
         width: 275px;
         height: 68px;
         text-align: center;
+        @media screen and (min-width:769px) {
+            width: 100%;
+            height: 48px;
+        }
     }
     &__txt {
         width: 315px;
@@ -16,7 +23,13 @@
         text-align: center;
         font-weight: 300;
         font-size: 18px;
+
+        @media screen and (min-width:769px) {
+            width: 100%;
+            height: 26px;
+        }
     }
+    
 }
 
 .button{
