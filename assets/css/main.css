@@ -101,7 +101,8 @@ a {
 }
 @media screen and (min-width: 769px) {
   .fonctionnement {
-    padding-left: 160px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -332,7 +333,8 @@ footer i {
 }
 @media screen and (min-width: 769px) {
   .restaurants {
-    padding-left: 190px;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 
