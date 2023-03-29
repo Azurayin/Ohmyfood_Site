@@ -1,6 +1,6 @@
 .nouveau {
     position: relative;
-    &::before{
+    &::after{
         content: "Nouveau";
         position: absolute;
         height: 30px;
