@@ -10,9 +10,12 @@
     object-fit: cover;
     object-position: center;
     display: block;
-    height: 50vh;
+    height: 275px;
     object-fit: cover;
     object-position: center;
+    @media screen and (min-width: 769px) {
+        height: 375px;
+    }
 }
 
 .menu{
