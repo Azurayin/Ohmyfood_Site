@@ -1,8 +1,9 @@
 .fonctionnement {
     margin: 50px 30px 70px;
     @media screen and (min-width:769px) {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 145px;
+        padding-right: 145px;
+        
     }
 }
 
@@ -13,21 +14,21 @@
         @media screen and (min-width:769px) {
             display: flex;
             align-items: center;
-            justify-content: space-between;
             gap: 36px;
+            width: 95%;
         }
 }
 
 .bouton{
         height: 80px;
         width: 100%;
-
         margin-bottom: 25px;
         display: flex;
         align-items: center;
         border: none;
         color: $color_gray3;
-        &__txt{
+        
+            &__txt{
             color: black;
             margin-left: 20px;
         }     
@@ -45,7 +46,7 @@
                 background-color: $color_hover1;
                 color: $color_primary;
             }
-            
+        
     }
 
 .rondcouleur{

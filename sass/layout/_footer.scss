@@ -6,9 +6,9 @@ footer{
     flex-direction: column;
     @media screen and (min-width: 769px){
         flex-direction: row;
-        justify-content: center;
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        align-items: baseline;
     }
     a {
         color: $color_white;
@@ -16,17 +16,17 @@ footer{
 
     h2{
         font-family: "shrikhand", "sans-serif";
-        font-weight: 500;
-        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 18px;
         @media screen and (min-width: 769px){
             order:2;
-            padding-bottom: 0px;
-            font-size: medium;;
+            padding-left: 30px;
         }
     }
 
     p{
         padding-bottom: 7px;
+        font-size: 16px;
     }
     
     i{
@@ -35,3 +35,14 @@ footer{
         
     }
 
+.space{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 769px) {
+        padding-left: 30px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+
+}

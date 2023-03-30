@@ -101,8 +101,8 @@ a {
 }
 @media screen and (min-width: 769px) {
   .fonctionnement {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 145px;
+    padding-right: 145px;
   }
 }
 
@@ -115,8 +115,8 @@ a {
   .boutonsconteneur {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 36px;
+    width: 95%;
   }
 }
 
@@ -283,9 +283,9 @@ footer {
 @media screen and (min-width: 769px) {
   footer {
     flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: baseline;
   }
 }
 footer a {
@@ -293,21 +293,33 @@ footer a {
 }
 footer h2 {
   font-family: "shrikhand", "sans-serif";
-  font-weight: 500;
-  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
 }
 @media screen and (min-width: 769px) {
   footer h2 {
     order: 2;
-    padding-bottom: 0px;
-    font-size: medium;
+    padding-left: 30px;
   }
 }
 footer p {
   padding-bottom: 7px;
+  font-size: 16px;
 }
 footer i {
   margin-right: 10px;
+}
+
+.space {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 769px) {
+  .space {
+    padding-left: 30px;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 .nouveau {
@@ -333,8 +345,8 @@ footer i {
 }
 @media screen and (min-width: 769px) {
   .restaurants {
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 175px;
+    padding-right: 175px;
   }
 }
 
@@ -347,6 +359,7 @@ footer i {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    flex-wrap: wrap;
   }
 }
 
@@ -356,6 +369,11 @@ footer i {
   margin-bottom: 20px;
   border-radius: 15px;
   background-color: white;
+}
+@media screen and (min-width: 769px) {
+  .card {
+    width: 49%;
+  }
 }
 .card__img {
   height: 70%;
