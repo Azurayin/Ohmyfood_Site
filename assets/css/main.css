@@ -130,8 +130,11 @@ a {
   color: #7e7e7e;
 }
 .bouton__txt {
+  font-family: "Roboto";
   color: black;
   margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .bouton--radius {
   border-radius: 20px;
@@ -165,10 +168,6 @@ a {
 
 .fa-solid {
   font-size: 20px;
-}
-
-.boutontxt {
-  margin-left: 20px;
 }
 
 .arrow {
