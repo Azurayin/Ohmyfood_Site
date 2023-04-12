@@ -1,0 +1,25 @@
+.fa-solid{
+    font-size: 20px;
+}
+
+.fa-solid.fa-heart{
+    font-size: 30px;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.fa-heart{
+    &:active{
+            color: $color_secondary;
+            -webkit-text-stroke-color: $color_secondary;
+            transition: 300ms ease-in-out ;
+        }
+    @media screen and (min-width: 769px){
+        &:hover{
+            color: $color_secondary;
+            -webkit-text-stroke-color: $color_secondary;
+            transition: 300ms ease-in-out ;
+        }
+    }
+    }

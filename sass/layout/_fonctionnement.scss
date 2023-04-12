@@ -45,12 +45,21 @@
             &--shadow{
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             }
+            &:active{
+                background-color: $color_hover1;
+                color: $color_primary;
+                transition: 300ms ease-in-out;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);                
+            }
+        @media screen and (min-width: 769px){
             &:hover{
                 background-color: $color_hover1;
                 color: $color_primary;
-            }
-        
+                transition: 300ms ease-in-out;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
+        }
     }
+}
 
 .rondcouleur{
     height: 24px;
@@ -67,9 +76,5 @@
     &--backgroundcolor{
         background-color: $color_primary;
     }
-}
-
-.fa-solid{
-    font-size: 20px;
 }
 

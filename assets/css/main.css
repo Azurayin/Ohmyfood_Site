@@ -23,6 +23,30 @@ a {
   text-decoration: none;
 }
 
+.fa-solid {
+  font-size: 20px;
+}
+
+.fa-solid.fa-heart {
+  font-size: 30px;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+.fa-heart:active {
+  color: #FF79DA;
+  -webkit-text-stroke-color: #FF79DA;
+  transition: 300ms ease-in-out;
+}
+@media screen and (min-width: 769px) {
+  .fa-heart:hover {
+    color: #FF79DA;
+    -webkit-text-stroke-color: #FF79DA;
+    transition: 300ms ease-in-out;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -88,12 +112,26 @@ a {
   color: white;
   border: none;
   font-size: 16px;
+  text-align: center;
+  line-height: 50px;
 }
 .button--backgroundcolor {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 .button--shadow {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.button:active {
+  opacity: 0.9;
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
+}
+@media screen and (min-width: 769px) {
+  .button:hover {
+    opacity: 0.9;
+    transition: 300ms ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
+  }
 }
 
 .fonctionnement {
@@ -145,9 +183,19 @@ a {
 .bouton--shadow {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
-.bouton:hover {
+.bouton:active {
   background-color: #F5EDFF;
   color: #9356DC;
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 769px) {
+  .bouton:hover {
+    background-color: #F5EDFF;
+    color: #9356DC;
+    transition: 300ms ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .rondcouleur {
@@ -164,10 +212,6 @@ a {
 }
 .rondcouleur--backgroundcolor {
   background-color: #9356DC;
-}
-
-.fa-solid {
-  font-size: 20px;
 }
 
 .arrow {
@@ -362,6 +406,10 @@ footer i {
     flex-wrap: wrap;
   }
 }
+.cardsconteneur a {
+  display: inline-block;
+  width: 100%;
+}
 
 .card {
   height: 250px;
@@ -370,13 +418,18 @@ footer i {
   border-radius: 15px;
   background-color: white;
 }
+.card:active .fa-heart {
+  color: #FF79DA;
+  -webkit-text-stroke-color: #FF79DA;
+  transition: 300ms ease-in-out;
+}
 @media screen and (min-width: 769px) {
   .card {
     width: 49%;
   }
 }
 .card__img {
-  height: 70%;
+  height: 200px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -384,7 +437,7 @@ footer i {
   border-top-right-radius: 15px;
 }
 .card__contenu {
-  height: 30%;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -394,8 +447,4 @@ footer i {
 }
 .card__contenu__icon {
   margin-right: 30px;
-}
-
-.fa-heart {
-  font-size: 30px;
 }

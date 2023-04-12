@@ -16,6 +16,10 @@
         gap: 10px;
         flex-wrap: wrap;
     }
+    a{
+        display: inline-block;
+        width: 100%;
+    }
         
     }
 
@@ -25,12 +29,18 @@
     margin-bottom: 20px;
     border-radius: 15px;
     background-color: white;
+    &:active .fa-heart{
+        color: $color_secondary;
+        -webkit-text-stroke-color: $color_secondary;
+        transition: 300ms ease-in-out ;
+    }
+
     @media screen and (min-width: 769px){
         width: 49%;
     }
 
     &__img{
-            height: 70%;
+            height: 200px;
             width: 100%;
             object-fit: cover;
             border-top-left-radius: 15px;
@@ -38,7 +48,7 @@
     }
 
     &__contenu{
-        height: 30%;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -49,8 +59,6 @@
             margin-right: 30px;
         }
     }
+    
 
-}
-.fa-heart{
-    font-size: 30px;
 }
