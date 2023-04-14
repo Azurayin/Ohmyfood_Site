@@ -24,41 +24,38 @@
     }
 
 .card{
-    height: 250px;
     width: 100%;
     margin-bottom: 20px;
     border-radius: 15px;
     background-color: white;
-    &:active .fa-heart{
+    &__img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;}
+    .fa-heart:active{
         color: $color_secondary;
         -webkit-text-stroke-color: $color_secondary;
         transition: 300ms ease-in-out ;
     }
-
-    @media screen and (min-width: 769px){
-        width: 49%;
-    }
-
-    &__img{
-            height: 200px;
-            width: 100%;
-            object-fit: cover;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-    }
-
     &__contenu{
-        height: 50px;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
-        &__texte{
-            padding-left: 15px;
-        }
-        &__icon{
-            margin-right: 30px;
-        }
+        padding: 16px 13px;
     }
-    
 
+    @media screen and (min-width: 769px){
+        width: 49%;
+        .fa-heart:hover{
+            color: $color_secondary;
+            -webkit-text-stroke-color: $color_secondary;
+            transition: 300ms ease-in-out ;
+    }
+
+
+    
+}
 }

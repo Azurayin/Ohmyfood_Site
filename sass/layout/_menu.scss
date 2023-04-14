@@ -63,22 +63,76 @@
         }
         &__item{
             margin-top: 12px;
+            height: 70px;
             background-color: $color_white;
             border-radius: 15px;
-            padding: 12px 10px 12px;
+            overflow: hidden;
             display: flex;
             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+            animation: appear 700ms ease-in-out;
+            animation-fill-mode: both;
             
+            @for $i from 1 through 10 {
+                &:nth-of-type(#{$i}) {
+                   animation-delay: 300ms * $i;
+                }
+            }
+
+           
             &__price{
                 margin-left: auto;
                 font-weight: 500;
                 padding-right: 8px;
                 display: flex;
-                align-items: flex-end;          
+                align-items: flex-end;
+                padding-bottom: 10px;          
             }
+
+            &__check{
+                display: grid;
+                place-items: center;
+                flex-shrink: 0;
+                border-radius: 0 15px 15px 0;
+                background-color: $color_green;
+                margin-right: -60px;
+                width: 60px;
+                transition: margin-right 0.5s;
+                i{
+                    display: grid;
+                    place-items: center;
+                    background: white;
+                    border-radius: 1rem;
+                    color: $color_green;
+                    padding: 3px;
+                }
+            }
+
+            &:active{
+                .menu__item__check{
+                    margin: 0;
+                }
+
+                i {
+                    animation: quarter-spin 0.5s ease-in-out;
+
+                }
+            }
+            @media screen and (min-width: 769px){
+            &:hover{
+                .menu__item__check{
+                    margin: 0;
+                }
+
+                i {
+                    animation: quarter-spin 0.5s ease-in-out;
+
+                }
+            }
+        }
         }
         &__description{
             max-width: 635px;
+            padding: 12px 10px 12px;
             h4{
                 font-size: 18px;
                 font-weight: 500;
