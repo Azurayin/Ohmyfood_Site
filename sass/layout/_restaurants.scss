@@ -1,5 +1,5 @@
 .restaurants{
-    padding: 55px 30px 65px;
+    padding: 54px 30px 65px;
     background-color: $color_gray2;
     @media screen and (min-width:1025px) {
         padding-left: 175px;
@@ -61,14 +61,13 @@
             &:active{
                 -webkit-text-stroke-color: inherit;
                 opacity: 1;
-                scale: (1.1);
+                scale: 1.5;
             }
 
             @media screen and (min-width:1025px){
             &:hover{
                 -webkit-text-stroke-color: inherit;
                 opacity: 1;
-                scale: (1.1);
             }
         }
         }

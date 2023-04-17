@@ -60,13 +60,11 @@ a {
 .iconcolorchange:active {
   -webkit-text-stroke-color: inherit;
   opacity: 1;
-  scale: 1.1;
 }
 @media screen and (min-width: 1025px) {
   .iconcolorchange:hover {
     -webkit-text-stroke-color: inherit;
     opacity: 1;
-    scale: 1.1;
   }
 }
 
@@ -526,7 +524,7 @@ footer i {
 }
 
 .restaurants {
-  padding: 55px 30px 65px;
+  padding: 54px 30px 65px;
   background-color: #F6F6F6;
 }
 @media screen and (min-width: 1025px) {
@@ -590,13 +588,12 @@ footer i {
 .card__contenu__icon2:active {
   -webkit-text-stroke-color: inherit;
   opacity: 1;
-  scale: 1.1;
+  scale: 1.5;
 }
 @media screen and (min-width: 1025px) {
   .card__contenu__icon2:hover {
     -webkit-text-stroke-color: inherit;
     opacity: 1;
-    scale: 1.1;
   }
 }
 @media screen and (min-width: 1025px) {
