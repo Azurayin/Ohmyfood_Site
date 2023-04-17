@@ -5,10 +5,18 @@
     gap: 1rem;
     background-color: $color_gray1;
     text-align: center;
-    padding: 20px;
     font-size: 19px;
+    height: 50px;
     & i {
       font-size: 20px;
+      margin-left: 80px;
     }
-    
+    input{
+      border: none;
+      font-size: 16px;
+      background: $color_gray1;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif;
+      outline: none;
+    }
   }

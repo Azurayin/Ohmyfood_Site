@@ -5,6 +5,7 @@
         padding-left: 175px;
         padding-right: 175px;
     }
+    
 }
 
 .cardsconteneur{
@@ -34,11 +35,8 @@
         object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;}
-    .fa-heart:active{
-        color: $color_secondary;
-        -webkit-text-stroke-color: $color_secondary;
-        transition: 300ms ease-in-out ;
-    }
+    
+    
     &__contenu{
 
         display: flex;
@@ -49,12 +47,7 @@
 
     @media screen and (min-width: 769px){
         width: 49%;
-        .fa-heart:hover{
-            color: $color_secondary;
-            -webkit-text-stroke-color: $color_secondary;
-            transition: 300ms ease-in-out ;
-    }
-
+    
 
     
 }
