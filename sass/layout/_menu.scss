@@ -38,6 +38,7 @@
             display: flex;
             position: relative;
             justify-content: space-between;
+            min-width: 375px;
             font-size: 28px;
             font-family: "Shrikhand", "sans-serif";
             i{
@@ -128,7 +129,7 @@
 
                 }
             }
-            @media screen and (min-width: 769px){
+            @media screen and (min-width: 1025px){
             &:hover{
                 .menu__item__check{
                     margin: 0;
