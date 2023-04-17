@@ -509,6 +509,12 @@ footer p {
 }
 footer i {
   margin-right: 10px;
+  font-size: 13px;
+  width: 11px;
+}
+
+.fa-hands-helping {
+  font-size: 11px;
 }
 
 .space {
