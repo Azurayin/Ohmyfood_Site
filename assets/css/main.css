@@ -348,7 +348,7 @@ a {
 }
 @media screen and (min-width: 769px) {
   .menu h2 i {
-    right: -50px;
+    right: 24px;
   }
 }
 .menu__category {
