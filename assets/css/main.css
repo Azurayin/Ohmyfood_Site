@@ -219,7 +219,7 @@ a {
 
 .boutonsconteneur {
   margin-top: 28px;
-  width: 100%;
+  width: calc(100% - 15px);
   margin-left: 15px;
 }
 .boutonsconteneur i {
@@ -351,6 +351,14 @@ a {
   .menu h2 i {
     right: 24px;
   }
+}
+.menu__description {
+  overflow: hidden;
+}
+.menu__description h4, .menu__description p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu__category {
   max-width: 635px;
@@ -594,7 +602,6 @@ footer i {
 .card__contenu__icon2:active {
   -webkit-text-stroke-color: inherit;
   opacity: 1;
-  scale: 1.5;
 }
 @media screen and (min-width: 1025px) {
   .card__contenu__icon2:hover {

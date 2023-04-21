@@ -52,6 +52,16 @@
             }
         }
         
+        &__description{
+            overflow: hidden;
+
+            h4,p{
+                text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            }
+        }
+
         &__category{
             max-width: 635px;
             width: 100%;
