@@ -338,13 +338,12 @@ a {
   display: flex;
   position: relative;
   justify-content: space-between;
-  min-width: 375px;
   font-size: 28px;
   font-family: "Shrikhand", "sans-serif";
 }
 .menu h2 i {
   position: absolute;
-  right: 41px;
+  right: 10px;
   top: 5px;
 }
 @media screen and (min-width: 769px) {
